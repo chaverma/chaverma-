@@ -1,0 +1,7 @@
+.all_articles{float:right;}
+.article-autor{float:left;}
+.article-created-date{float:right;}
+.article-text{margin-top:30px;}
+body{background:rgb(38, 167, 139);}
+h2,div,p{color:white;}
+a{color:white;}
