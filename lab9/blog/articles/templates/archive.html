@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<link rel="stylesheet" href="../static/index.css">
+<script src="../static/js/jquery-3.4.1.min.js"></script>
+<script src="../static/js/helloworld.js"></script>
+ <title>Архив всех статей</title>
+ </head>
+ <body>
+      <div class="one-post-shadow"></div>
+       <div class="header">
+         <img class="logo" src="../static/dpb-logo.png" />
+         <div class="header-text-area">
+             <p class="service-title">Коллективный блог</p>
+             <a href="reg" class="register-link">Регистрация</a>
+             <a href="auth" class="register-link">Вход</a>
+         </div>
+         <div class="icons-for-parallax">
+           <img class="icon-for-parallax-third"src="../static/doc.png">
+           <img class="icon-for-parallax-second"src="../static/doc.png">
+           <img class="icon-for-parallax-first"src="../static/doc.png">
+         </div>
+       </div>
+       <div class="archive">
+        {% for post in posts %}
+         <div class="one-post">
+           <div class="fold-button" >cвернуть</div>
+          <a href="article/{{post.get_article}}"><h2 class="post-title">{{ post.title }}</h2></a>
+          <div class="article-info">
+            <div class="article-author">{{ post.author.username }}</div>
+            <div class="article-created-date">{{ post.created_date }}</div>
+            <p class="article-text">{{ post.get_excerpt }}</p>
+          </div>
+
+        </div>
+        {% endfor %}
+       </div>
+ </body>
+ <script src="../static/js/highlight-post.js"></script>
+ <script src="../static/js/fold-post.js"></script>
+ <script src="../static/js/parralax.js"></script>
+</html>
