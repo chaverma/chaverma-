@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<link rel="stylesheet" href="../static/article.css">
+ <title>Архив всех статей</title>
+ </head>
+ <body>
+       <div class="header">
+         <img src="../static/dpb-logo.png" />
+       </div>
+       <a class="all_articles" href='/'><div>Все статьи</div></a>
+       <div class="archive">
+         <div class="one-post">
+          <h2 class="post-title">{{ post.title }}</h2>
+          <div class="article-info">
+            <div class="article-author">{{ post.author.username }}</div>
+            <div class="article-created-date">{{ post.created_date }}</div>
+          </div>
+          <p class="article-text">{{ post.get_excerpts }}</p>
+        </div>
+       </div>
+ </body>
+</html>

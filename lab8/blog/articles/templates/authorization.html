@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/auth.css">
+        <title>Authorization</title>
+    </head>
+    <body>
+        <div class="content">
+          <h1>Authorization</h1>
+            <form method="POST">{% csrf_token %}
+              <p>Username</p>
+              <input type="text" name="login" placeholder="" value="{{ form.login }}">
+              <div class="error">{{ form.error_log }}</div>
+              <br>
+              <p>Pass</p>
+              <input type="text" name="pass" placeholder="" value="{{ form.pass }}">
+              <div class="error">{{ form.error_pass }}</div>
+              <br>
+              <input type="submit" value="Сохранить">
+              <br>
+            </form>
+        </div>
+    </body>
+</html>

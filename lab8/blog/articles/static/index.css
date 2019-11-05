@@ -1,0 +1,9 @@
+body{background:rgb(38, 167, 139);}
+h2,div,p{color:white;}
+a{color:white;}
+.article-autor{float:left;}
+.article-created-date{float:right;}
+.article-text{margin-top:30px;}
+.fold-button{float:right;text-decoration:underline;}
+.fold-button:hover{cursor:pointer;color:#105c4b;}
+.one-post-shadow {position: absolute;top: 0;left: 0;height: 100%;width: 100%;background: black;z-index: -1;opacity:0;/* это свойство «отодвигает» элемент на задний план */}
