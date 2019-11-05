@@ -1,0 +1,5 @@
+body{background:rgb(38, 167, 139);border: solid 1px;padding:10px;}
+h1{color:white;}
+input[name=title]{margin:5px;width:228px;}
+input[type=submit]{margin:5px;}
+textarea{margin:5px;width:636px;height:136px;}
